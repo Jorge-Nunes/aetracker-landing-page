@@ -80,7 +80,7 @@ const HeroSection = () => {
           <div className="relative animate-float">
             <img 
               src={heroImage} 
-              alt="Rastreamento Veicular AETRacker" 
+              alt="Rastreamento Veicular AETRACKER" 
               className="w-full h-auto rounded-lg shadow-elegant"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-brand-red/20 to-transparent rounded-lg"></div>

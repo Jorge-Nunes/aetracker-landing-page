@@ -15,10 +15,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img src={logo} alt="AETRacker" className="h-10 w-10" />
+            <div className="flex items-center">
               <div className="text-xl font-bold text-brand-white">
-                AE<span className="text-brand-red">Tracker</span>
+                AE<span className="text-brand-red">TRACKER</span>
               </div>
             </div>
             <p className="text-muted-foreground">
@@ -112,7 +111,7 @@ const Footer = () => {
         <div className="border-t border-brand-red/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              © 2024 AETRacker. Todos os direitos reservados.
+              © 2024 AETRACKER. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-muted-foreground hover:text-brand-red text-sm transition-colors">

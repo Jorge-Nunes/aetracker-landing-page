@@ -8,14 +8,14 @@ const TestimonialsSection = () => {
       name: "Carlos Silva",
       role: "Empresário",
       image: testimonial1,
-      content: "A AETRacker salvou minha empresa! Quando meu caminhão foi roubado, conseguimos recuperá-lo em menos de 2 horas graças ao rastreamento preciso. Recomendo 100%!",
+      content: "A AETRACKER salvou minha empresa! Quando meu caminhão foi roubado, conseguimos recuperá-lo em menos de 2 horas graças ao rastreamento preciso. Recomendo 100%!",
       rating: 5
     },
     {
       name: "Maria Santos",
       role: "Motorista de App",
       image: testimonial2,
-      content: "Como trabalho com aplicativo, a segurança é fundamental. O rastreamento da AETRacker me dá tranquilidade total. O app é super fácil de usar e o suporte é excelente.",
+      content: "Como trabalho com aplicativo, a segurança é fundamental. O rastreamento da AETRACKER me dá tranquilidade total. O app é super fácil de usar e o suporte é excelente.",
       rating: 5
     }
   ];
@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
             O que nossos <span className="text-brand-red">clientes dizem</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Milhares de clientes confiam na AETRacker para proteger seus veículos.
+            Milhares de clientes confiam na AETRACKER para proteger seus veículos.
           </p>
         </div>
 

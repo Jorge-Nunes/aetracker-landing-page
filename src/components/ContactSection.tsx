@@ -33,7 +33,7 @@ const ContactSection = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de rastreamento da AETRacker.", "_blank");
+    window.open("https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de rastreamento da AETRACKER.", "_blank");
   };
 
   return (
