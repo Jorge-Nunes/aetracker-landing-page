@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Shield, Clock, Smartphone } from "lucide-react";
-import heroImage from "@/assets/aetracker-hero-themed.png";
+import heroImage from "@/assets/aetracker-hero.png";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -81,9 +81,9 @@ const HeroSection = () => {
             <img 
               src={heroImage} 
               alt="Rastreamento Veicular AETRacker" 
-              className="w-full h-auto rounded-lg shadow-elegant contrast-110 brightness-95"
+              className="w-full h-auto rounded-lg shadow-elegant"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-black/40 via-transparent to-brand-red/10 rounded-lg"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-red/20 to-transparent rounded-lg"></div>
           </div>
         </div>
       </div>
