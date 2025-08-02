@@ -37,7 +37,7 @@ const PricingSection = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Sem consulta ao SPC/Serasa. Negativados são aceitos. Contrate agora e proteja seu veículo!
           </p>
-          <div className="bg-gradient-red text-brand-white px-6 py-3 rounded-full inline-block font-semibold">🔥 Promoção: Taxa de instação 50% OFF!</div>
+          <div className="bg-gradient-red text-brand-white px-6 py-3 rounded-full inline-block font-semibold">🔥 Promoção: Equipamento 4G com 50% OFF!</div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
