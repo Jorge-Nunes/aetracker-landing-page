@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/aetracker-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +20,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="AETRacker" className="h-10 w-10" />
+            <img src={logo} alt="AETRACKER" className="h-10 w-10" />
             <div className="text-xl font-bold text-brand-white">
-              AE<span className="text-brand-red">Tracker</span>
+              AE<span className="text-brand-red">TRACKER</span>
             </div>
           </div>
 
@@ -54,8 +54,13 @@ const Header = () => {
             </button>
           </nav>
 
-          {/* CTA Button Desktop */}
-          <div className="hidden md:block">
+          {/* CTA Buttons Desktop */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button variant="outline-red" asChild>
+              <a href="https://live.aetracker.com.br/login?to=/home" target="_blank" rel="noopener noreferrer">
+                Acessar Plataforma
+              </a>
+            </Button>
             <Button variant="cta" onClick={() => scrollToSection('contato')}>
               <MapPin className="w-4 h-4" />
               Solicitar Demonstração
@@ -99,7 +104,12 @@ const Header = () => {
               >
                 Contato
               </button>
-              <div className="px-4 pt-2">
+              <div className="px-4 pt-2 space-y-3">
+                <Button variant="outline-red" className="w-full" asChild>
+                  <a href="https://live.aetracker.com.br/login?to=/home" target="_blank" rel="noopener noreferrer">
+                    Acessar Plataforma
+                  </a>
+                </Button>
                 <Button variant="cta" className="w-full" onClick={() => scrollToSection('contato')}>
                   <MapPin className="w-4 h-4" />
                   Solicitar Demonstração
