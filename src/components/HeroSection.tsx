@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Shield, Clock, Smartphone } from "lucide-react";
-import heroImage from "@/assets/hero-tracking.jpg";
+import heroImage from "@/assets/aetracker-hero.png";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
