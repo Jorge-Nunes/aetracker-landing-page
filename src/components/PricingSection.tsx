@@ -72,7 +72,7 @@ const PricingSection = () => {
               </ul>
 
               <Button variant={plan.popular ? "cta" : "outline-red"} className="w-full" onClick={scrollToContact}>
-                {plan.popular ? "Contratar Agora" : "Escolher Plano"}
+                {plan.popular ? "🚀 GARANTIR PROTEÇÃO AGORA" : "💎 ESCOLHER ESTE PLANO"}
               </Button>
             </div>)}
         </div>

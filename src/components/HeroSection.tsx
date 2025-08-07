@@ -56,23 +56,40 @@ const HeroSection = () => {
                 className="animate-pulse-glow"
               >
                 <MapPin className="w-5 h-5" />
-                Quero Rastrear Meu Veículo
+                🚀 PROTEGER MEU VEÍCULO AGORA
               </Button>
               <Button 
                 variant="outline-red" 
                 size="lg"
                 onClick={() => scrollToSection('como-funciona')}
               >
-                Como Funciona
+                📱 Ver Como Funciona
               </Button>
             </div>
 
-            {/* Trust Badge */}
-            <div className="bg-brand-dark/50 rounded-lg p-4 border border-brand-red/20">
-              <p className="text-brand-white text-sm">
-                <span className="text-brand-red font-bold">+ Segurança + Tranquilidade</span> • 
-                Para pessoas e empresas • Equipamento com valor reduzido
-              </p>
+            {/* Enhanced Trust Badge */}
+            <div className="space-y-4">
+              <div className="bg-brand-dark/50 rounded-lg p-4 border border-brand-red/20">
+                <p className="text-brand-white text-sm">
+                  <span className="text-brand-red font-bold">+ Segurança + Tranquilidade</span> • 
+                  Para pessoas e empresas • Equipamento com valor reduzido
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-3 gap-4 text-center">
+                <div className="bg-brand-dark/30 rounded-lg p-3 border border-brand-red/10">
+                  <div className="text-brand-red font-bold text-lg">15+</div>
+                  <div className="text-brand-white text-xs">Anos Mercado</div>
+                </div>
+                <div className="bg-brand-dark/30 rounded-lg p-3 border border-brand-red/10">
+                  <div className="text-brand-red font-bold text-lg">50k+</div>
+                  <div className="text-brand-white text-xs">Clientes Ativos</div>
+                </div>
+                <div className="bg-brand-dark/30 rounded-lg p-3 border border-brand-red/10">
+                  <div className="text-brand-red font-bold text-lg">98%</div>
+                  <div className="text-brand-white text-xs">Recuperação</div>
+                </div>
+              </div>
             </div>
           </div>
 
