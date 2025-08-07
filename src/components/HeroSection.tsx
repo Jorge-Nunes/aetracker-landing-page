@@ -71,7 +71,7 @@ const HeroSection = () => {
             <div className="bg-brand-dark/50 rounded-lg p-4 border border-brand-red/20">
               <p className="text-brand-white text-sm">
                 <span className="text-brand-red font-bold">+ Segurança + Tranquilidade</span> • 
-                Para pessoas e empresas • Equipamento com valor reduzida
+                Para pessoas e empresas • Equipamento com valor reduzido
               </p>
             </div>
           </div>
