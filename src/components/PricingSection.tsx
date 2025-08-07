@@ -37,7 +37,7 @@ const PricingSection = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Proteção para seu veículo 24h via satélite com alta tecnologia de bloqueio.
           </p>
-          <div className="bg-gradient-red text-brand-white px-6 py-3 rounded-full inline-block font-semibold">📍 Taxa de instalação com valor reduzido por tempo indeterminado!</div>
+          <div className="bg-gradient-red text-brand-white px-6 py-3 rounded-full inline-block font-semibold">📍 Equipamento com valor reduzido por tempo indeterminado!</div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
