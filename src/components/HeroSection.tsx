@@ -18,32 +18,32 @@ const HeroSection = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-white leading-tight">
-                Proteja Seu <span className="text-brand-red">Veículo</span> com 
-                Rastreamento Inteligente
+                Proteção Para Seu <span className="text-brand-red">Veículo 24H</span><br/>
+                <span className="text-brand-red">Via Satélite</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
-                Monitoramento em tempo real, cobertura nacional e aplicativo próprio. 
-                Planos a partir de <span className="text-brand-red font-bold">R$ 49,90/mês</span>.
+                Alta tecnologia de bloqueio com localização GPS e travamento automático. 
+                Planos a partir de <span className="text-brand-red font-bold">R$ 29,00/mês</span>.
               </p>
             </div>
 
             {/* Benefits Quick List */}
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center space-x-3">
-                <Shield className="w-5 h-5 text-brand-red" />
-                <span className="text-brand-white">Sem consulta SPC</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Clock className="w-5 h-5 text-brand-red" />
-                <span className="text-brand-white">Suporte 24/7</span>
-              </div>
-              <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-brand-red" />
-                <span className="text-brand-white">Cobertura Nacional</span>
+                <span className="text-brand-white">Localização via GPS</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Smartphone className="w-5 h-5 text-brand-red" />
-                <span className="text-brand-white">App Próprio</span>
+                <span className="text-brand-white">Alerta pelo App</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Shield className="w-5 h-5 text-brand-red" />
+                <span className="text-brand-white">Travamento Automático</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Clock className="w-5 h-5 text-brand-red" />
+                <span className="text-brand-white">Bloqueio via Satélite</span>
               </div>
             </div>
 
@@ -70,8 +70,8 @@ const HeroSection = () => {
             {/* Trust Badge */}
             <div className="bg-brand-dark/50 rounded-lg p-4 border border-brand-red/20">
               <p className="text-brand-white text-sm">
-                <span className="text-brand-red font-bold">✓ Negativados aceitos</span> • 
-                Sem burocracia • Aprovação rápida
+                <span className="text-brand-red font-bold">+ Segurança + Tranquilidade</span> • 
+                Para pessoas e empresas • Taxa de instalação reduzida
               </p>
             </div>
           </div>

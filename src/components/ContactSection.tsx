@@ -33,7 +33,7 @@ const ContactSection = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os planos de rastreamento da AETRACKER.", "_blank");
+    window.open("https://wa.me/5511943453069?text=Olá! Gostaria de saber mais sobre os planos de rastreamento da AETRACKER.", "_blank");
   };
 
   return (
@@ -126,8 +126,9 @@ const ContactSection = () => {
                     <Phone className="w-6 h-6 text-brand-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-brand-white">Telefone</h4>
-                    <p className="text-muted-foreground">(11) 9999-9999</p>
+                    <h4 className="font-semibold text-brand-white">Telefones</h4>
+                    <p className="text-muted-foreground">(11) 94345-3069</p>
+                    <p className="text-muted-foreground">(11) 98773-3033</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -136,7 +137,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-brand-white">E-mail</h4>
-                    <p className="text-muted-foreground">contato@aetracker.com.br</p>
+                    <p className="text-muted-foreground">suporte@aetracker.com.br</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">

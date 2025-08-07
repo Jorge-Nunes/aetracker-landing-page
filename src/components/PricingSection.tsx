@@ -2,23 +2,23 @@ import { Button } from "@/components/ui/button";
 import { Check, Star, Crown } from "lucide-react";
 const PricingSection = () => {
   const plans = [{
-    name: "Essencial",
-    price: "49,90",
-    description: "Ideal para veículos de uso pessoal",
+    name: "MOTO",
+    price: "29,00",
+    description: "Proteção completa para sua motocicleta",
     popular: false,
-    features: ["Monitoramento 24/7", "Aplicativo mobile", "Localização em tempo real", "Histórico de rotas", "Suporte por chat", "1 veículo"]
+    features: ["Localização via GPS", "Alerta pelo app", "Travamento automático", "Bloqueio via satélite", "Suporte 24/7", "Taxa de instalação reduzida"]
   }, {
-    name: "Profissional",
-    price: "89,90",
-    description: "Perfeito para pequenas empresas",
+    name: "CARRO",
+    price: "39,00",
+    description: "Segurança total para seu veículo",
     popular: true,
-    features: ["Todos os recursos do Essencial", "Cercas eletrônicas ilimitadas", "Relatórios detalhados", "Suporte prioritário 24/7", "Alertas personalizados", "Até 3 veículos"]
+    features: ["Localização via GPS", "Alerta pelo app", "Travamento automático", "Bloqueio via satélite", "Rotas e movimentação", "Suporte 24/7", "Taxa de instalação reduzida"]
   }, {
-    name: "Empresarial",
-    price: "149,90",
-    description: "Solução completa para frotas",
+    name: "CAMINHÃO",
+    price: "49,00",
+    description: "Solução profissional para frotas e empresas",
     popular: false,
-    features: ["Todos os recursos do Profissional", "Gestão completa de frotas", "API para integração", "Suporte técnico dedicado", "Relatórios avançados", "Veículos ilimitados"]
+    features: ["Localização via GPS", "Alerta pelo app", "Travamento automático", "Bloqueio via satélite", "Gestão de frotas", "Relatórios detalhados", "Suporte técnico especializado"]
   }];
   const scrollToContact = () => {
     const element = document.getElementById('contato');
@@ -35,9 +35,9 @@ const PricingSection = () => {
             Escolha o <span className="text-brand-red">Plano Ideal</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Sem consulta ao SPC/Serasa. Negativados são aceitos. Contrate agora e proteja seu veículo!
+            Proteção para seu veículo 24h via satélite com alta tecnologia de bloqueio.
           </p>
-          <div className="bg-gradient-red text-brand-white px-6 py-3 rounded-full inline-block font-semibold">🔥 Promoção: Equipamento 4G com 50% OFF!</div>
+          <div className="bg-gradient-red text-brand-white px-6 py-3 rounded-full inline-block font-semibold">📍 Taxa de instalação com valor reduzido por tempo indeterminado!</div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
