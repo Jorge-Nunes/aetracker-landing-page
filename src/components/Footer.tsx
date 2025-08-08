@@ -1,16 +1,15 @@
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <footer className="bg-brand-black border-t border-brand-red/20">
+  return <footer className="bg-brand-black border-t border-brand-red/20">
       <div className="container mx-auto px-4 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
@@ -41,34 +40,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-brand-white mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => scrollToSection('home')}
-                  className="text-muted-foreground hover:text-brand-red transition-colors"
-                >
+                <button onClick={() => scrollToSection('home')} className="text-muted-foreground hover:text-brand-red transition-colors">
                   Home
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('como-funciona')}
-                  className="text-muted-foreground hover:text-brand-red transition-colors"
-                >
+                <button onClick={() => scrollToSection('como-funciona')} className="text-muted-foreground hover:text-brand-red transition-colors">
                   Como Funciona
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('planos')}
-                  className="text-muted-foreground hover:text-brand-red transition-colors"
-                >
+                <button onClick={() => scrollToSection('planos')} className="text-muted-foreground hover:text-brand-red transition-colors">
                   Planos
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contato')}
-                  className="text-muted-foreground hover:text-brand-red transition-colors"
-                >
+                <button onClick={() => scrollToSection('contato')} className="text-muted-foreground hover:text-brand-red transition-colors">
                   Contato
                 </button>
               </li>
@@ -94,7 +81,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-brand-red" />
-                <span className="text-muted-foreground">(11) 9999-9999</span>
+                <span className="text-muted-foreground">(11) 94345-3069</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-brand-red" />
@@ -124,8 +111,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
