@@ -1,4 +1,4 @@
-import { Shield, Award, Users, Smartphone, Clock, CheckCircle } from "lucide-react";
+import { Shield, Users, Smartphone, Clock, CheckCircle } from "lucide-react";
 
 const GuaranteeSection = () => {
   const guarantees = [
@@ -7,12 +7,6 @@ const GuaranteeSection = () => {
       title: "Certificação ANATEL",
       description: "Equipamentos homologados e certificados pela ANATEL para total segurança e legalidade.",
       badge: "Certificado"
-    },
-    {
-      icon: Award,
-      title: "ISO 9001:2015",
-      description: "Empresa certificada com padrão internacional de qualidade em gestão e atendimento.",
-      badge: "Qualidade"
     },
     {
       icon: Users,
@@ -28,8 +22,8 @@ const GuaranteeSection = () => {
     },
     {
       icon: Clock,
-      title: "Garantia de 2 Anos",
-      description: "Cobertura total do equipamento e assistência técnica gratuita por 24 meses.",
+      title: "Garantia de 1 Ano",
+      description: "Cobertura total do equipamento e assistência técnica gratuita por 12 meses.",
       badge: "Garantia"
     },
     {
@@ -40,12 +34,6 @@ const GuaranteeSection = () => {
     }
   ];
 
-  const awards = [
-    "🏆 Melhor Rastreador 2023 - Revista AutoEsporte",
-    "🥇 Prêmio Excelência em Atendimento - PROCON",
-    "⭐ 4.8/5 estrelas - Reclame Aqui",
-    "🛡️ Empresa Confiável - Cadastur"
-  ];
 
   return (
     <section className="py-20 bg-brand-dark">
@@ -84,26 +72,6 @@ const GuaranteeSection = () => {
           })}
         </div>
 
-        <div className="bg-gradient-red rounded-lg p-8 text-center text-brand-white">
-          <h3 className="text-2xl font-bold mb-6">
-            🏆 Prêmios e Reconhecimentos
-          </h3>
-          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-            {awards.map((award, index) => (
-              <div
-                key={index}
-                className="bg-black/30 rounded-lg p-4 backdrop-blur-sm"
-              >
-                <p className="font-semibold">{award}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8 text-sm opacity-90">
-            <p>
-              ✅ Empresa regulamentada • ✅ Licenças em dia • ✅ Seguro responsabilidade civil
-            </p>
-          </div>
-        </div>
 
         <div className="mt-16 text-center">
           <div className="bg-background rounded-lg p-8 border border-brand-red/20 max-w-3xl mx-auto">

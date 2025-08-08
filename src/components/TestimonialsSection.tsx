@@ -93,38 +93,6 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-red rounded-lg p-8 text-brand-white">
-            <h3 className="text-2xl font-bold mb-6">
-              🎯 Resultados Reais de Clientes AETRACKER
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              <div className="bg-black/30 rounded-lg p-4">
-                <div className="text-3xl font-bold mb-1">50k+</div>
-                <div className="text-sm opacity-90">Veículos Protegidos</div>
-                <div className="text-xs text-green-300 mt-1">✅ Ativo agora</div>
-              </div>
-              <div className="bg-black/30 rounded-lg p-4">
-                <div className="text-3xl font-bold mb-1">1.247</div>
-                <div className="text-sm opacity-90">Recuperados Este Ano</div>
-                <div className="text-xs text-yellow-300 mt-1">🚗 Última: hoje</div>
-              </div>
-              <div className="bg-black/30 rounded-lg p-4">
-                <div className="text-3xl font-bold mb-1">2 MIN</div>
-                <div className="text-sm opacity-90">Tempo Médio Resposta</div>
-                <div className="text-xs text-red-300 mt-1">⚡ 24/7 ativo</div>
-              </div>
-              <div className="bg-black/30 rounded-lg p-4">
-                <div className="text-3xl font-bold mb-1">98%</div>
-                <div className="text-sm opacity-90">Taxa Recuperação</div>
-                <div className="text-xs text-blue-300 mt-1">📊 Comprovado</div>
-              </div>
-            </div>
-            <div className="mt-6 text-sm opacity-90">
-              ⭐ 4.9/5 estrelas no Google • 🏆 Melhor Rastreador 2023
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

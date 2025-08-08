@@ -14,10 +14,6 @@ const FAQSection = () => {
       answer: "Sim! Não há fidelidade. Você pode cancelar quando quiser sem multas ou taxas extras. Basta entrar em contato conosco."
     },
     {
-      question: "O que acontece se meu veículo for roubado?",
-      answer: "Assim que detectarmos movimento não autorizado, nossa central entra em contato imediatamente. Você recebe alertas no app e podemos bloquear o veículo remotamente via satélite."
-    },
-    {
       question: "O equipamento funciona em qualquer lugar do Brasil?",
       answer: "Sim! Nosso sistema utiliza tecnologia satelital que funciona em todo território nacional, incluindo áreas rurais e estradas."
     },
