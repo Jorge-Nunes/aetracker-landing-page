@@ -1,4 +1,4 @@
-import { Shield, Users, Smartphone, Clock, CheckCircle } from "lucide-react";
+import { Shield, Users, Smartphone, Clock, CheckCircle, Headphones } from "lucide-react";
 
 const GuaranteeSection = () => {
   const guarantees = [
@@ -31,6 +31,12 @@ const GuaranteeSection = () => {
       title: "Satisfação Garantida",
       description: "Se não ficar satisfeito em 30 dias, devolvemos 100% do valor pago.",
       badge: "Satisfação"
+    },
+    {
+      icon: Headphones,
+      title: "Suporte 24/7",
+      description: "Atendimento humano 24 horas por dia, 7 dias por semana, em todo o Brasil.",
+      badge: "Suporte"
     }
   ];
 
