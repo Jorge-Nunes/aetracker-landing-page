@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Shield, Clock, Smartphone } from "lucide-react";
-import heroImage from "@/assets/hero-tracking.jpg";
+import TrackingVideo from "@/components/TrackingVideo";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -93,14 +93,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Hero Image */}
+          {/* Video de Rastreamento */}
           <div className="relative animate-float">
-            <img 
-              src={heroImage} 
-              alt="Rastreamento Veicular AETRACKER" 
-              className="w-full h-auto rounded-lg shadow-elegant"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-brand-red/20 to-transparent rounded-lg"></div>
+            <TrackingVideo />
           </div>
         </div>
       </div>
