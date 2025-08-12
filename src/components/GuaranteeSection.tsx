@@ -65,10 +65,8 @@ const GuaranteeSection = () => {
 
         <div className="mt-16 text-center">
           <div className="bg-background rounded-lg p-8 border border-brand-red/20 max-w-3xl mx-auto">
-            <h3 className="text-xl font-bold text-brand-white mb-4">
-              🛡️ Nossa Promessa de Segurança
-            </h3>
-            <p className="text-muted-foreground leading-relaxed">"Garantimos que seu veículo estará protegido 24 horas por dia com a mais alta tecnologia de rastreamento satelital."</p>
+            <h3 className="text-xl font-bold text-brand-white mb-4">🛡️Compromisso com Sua Tranquilidade</h3>
+            <p className="text-muted-foreground leading-relaxed">"Monitoramento veicular com tecnologia avançada para ajudar a proteger o que é seu ."</p>
             <div className="mt-6 flex items-center justify-center text-brand-red">
               <Shield className="w-6 h-6 mr-2" />
               <span className="font-semibold">AETRACKER - Sua segurança é nossa missão</span>
