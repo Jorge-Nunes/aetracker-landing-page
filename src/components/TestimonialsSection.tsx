@@ -1,6 +1,10 @@
+
 import { Star } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
+import testimonial3 from "@/assets/testimonial-3.jpg";
+import testimonial4 from "@/assets/testimonial-4.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -23,7 +27,7 @@ const TestimonialsSection = () => {
     {
       name: "João Oliveira",
       role: "Comerciante - Dono de Moto",
-      image: testimonial1,
+      image: testimonial3,
       content: "Minha moto foi roubada na sexta-feira às 18h. No sábado às 8h já estava de volta na minha garagem! A AETRACKER não só localizou como a polícia conseguiu prender os ladrões. Incrível!",
       rating: 5,
       recovery: "Moto recuperada em 14h"
@@ -31,7 +35,7 @@ const TestimonialsSection = () => {
     {
       name: "Ana Costa",
       role: "Médica - BMW recuperada",
-      image: testimonial2,
+      image: testimonial4,
       content: "Achei que nunca mais veria meu carro. Em 4 horas a AETRACKER localizou e a polícia recuperou. O sistema funcionou perfeitamente mesmo em área rural. Vale cada centavo!",
       rating: 5,
       recovery: "BMW X3 recuperada"
@@ -58,11 +62,22 @@ const TestimonialsSection = () => {
             >
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover mr-4"
-                  />
+                  <Avatar className="w-16 h-16 mr-4 ring-2 ring-brand-red/40">
+                    <AvatarImage
+                      src={testimonial.image}
+                      alt={`Foto de ${testimonial.name}`}
+                      className="object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <AvatarFallback className="bg-brand-red/20 text-brand-white font-semibold">
+                      {testimonial.name
+                        .split(' ')
+                        .map(n => n[0])
+                        .join('')
+                        .toUpperCase()}
+                    </AvatarFallback>
+                  </Avatar>
                   <div>
                     <h3 className="text-lg font-semibold text-brand-white">
                       {testimonial.name}
