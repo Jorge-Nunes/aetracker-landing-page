@@ -30,31 +30,45 @@ const TrackingVideo = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 4000); // Troca a cada 4 segundos
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-auto rounded-lg overflow-hidden shadow-elegant">
-      {/* Container das imagens */}
-      <div className="relative w-full" style={{ aspectRatio: '4/3' }}>
+    <div className="relative w-full rounded-lg overflow-hidden shadow-elegant">
+      {/* Container das imagens com aspect ratio responsivo */}
+      <div className="relative w-full aspect-[4/3] md:aspect-[16/10] xl:aspect-[16/9]">
         {images.map((image, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
               index === currentImage 
-                ? 'opacity-100 scale-100 translate-x-0' 
-                : index < currentImage
-                ? 'opacity-0 scale-95 -translate-x-8'
-                : 'opacity-0 scale-95 translate-x-8'
+                ? 'opacity-100 scale-100' 
+                : 'opacity-0 scale-95'
             }`}
           >
-            <img 
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover bg-brand-dark rounded-lg"
+            {/* Fundo desfocado da mesma imagem */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center filter blur-sm scale-110"
+              style={{
+                backgroundImage: `url(${image.src})`,
+              }}
             />
+            
+            {/* Overlay escuro sobre o fundo desfocado */}
+            <div className="absolute inset-0 bg-black/40" />
+            
+            {/* Imagem principal centralizada */}
+            <div className="absolute inset-0 flex items-center justify-center p-4">
+              <img 
+                src={image.src}
+                alt={image.alt}
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                loading={index === 0 ? "eager" : "lazy"}
+                draggable={false}
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -90,6 +104,7 @@ const TrackingVideo = () => {
                 ? 'bg-brand-red scale-125 shadow-red' 
                 : 'bg-white/30 hover:bg-white/50'
             }`}
+            aria-label={`Ir para imagem ${index + 1}`}
           />
         ))}
       </div>
@@ -108,13 +123,15 @@ const TrackingVideo = () => {
       {/* Botões de navegação lateral */}
       <button
         onClick={() => setCurrentImage((prev) => (prev - 1 + images.length) % images.length)}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 hover:scale-110 z-10"
+        aria-label="Imagem anterior"
       >
         &#8249;
       </button>
       <button
         onClick={() => setCurrentImage((prev) => (prev + 1) % images.length)}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 hover:scale-110 z-10"
+        aria-label="Próxima imagem"
       >
         &#8250;
       </button>
