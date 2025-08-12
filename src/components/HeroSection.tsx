@@ -1,24 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Shield, Clock, Smartphone } from "lucide-react";
 import TrackingVideo from "@/components/TrackingVideo";
-
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen bg-gradient-dark flex items-center pt-16">
+  return <section id="home" className="min-h-screen bg-gradient-dark flex items-center pt-16">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-white leading-tight">
-                Proteção Para Seu <span className="text-brand-red">Veículo 24H</span><br/>
+                Proteção Para Seu <span className="text-brand-red">Veículo 24H</span><br />
                 <span className="text-brand-red">Via Satélite</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
@@ -49,20 +48,11 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="hero" 
-                size="lg"
-                onClick={() => scrollToSection('contato')}
-                className="animate-pulse-glow"
-              >
+              <Button variant="hero" size="lg" onClick={() => scrollToSection('contato')} className="animate-pulse-glow">
                 <MapPin className="w-5 h-5" />
                 🚀 PROTEGER MEU VEÍCULO AGORA
               </Button>
-              <Button 
-                variant="outline-red" 
-                size="lg"
-                onClick={() => scrollToSection('como-funciona')}
-              >
+              <Button variant="outline-red" size="lg" onClick={() => scrollToSection('como-funciona')}>
                 📱 Ver Como Funciona
               </Button>
             </div>
@@ -82,7 +72,7 @@ const HeroSection = () => {
                   <div className="text-brand-white text-xs">Anos Mercado</div>
                 </div>
                 <div className="bg-brand-dark/30 rounded-lg p-3 border border-brand-red/10">
-                  <div className="text-brand-red font-bold text-lg">50k+</div>
+                  <div className="text-brand-red font-bold text-lg">500+</div>
                   <div className="text-brand-white text-xs">Clientes Ativos</div>
                 </div>
                 <div className="bg-brand-dark/30 rounded-lg p-3 border border-brand-red/10">
@@ -99,8 +89,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
