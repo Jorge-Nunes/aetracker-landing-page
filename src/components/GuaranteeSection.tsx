@@ -23,7 +23,7 @@ const GuaranteeSection = () => {
   }, {
     icon: CheckCircle,
     title: "Satisfação Garantida",
-    description: "Se não ficar satisfeito em 30 dias, devolvemos 100% do valor pago.",
+    description: "Nosso compromisso é entregar a melhor solução em rastreamento veicular. Trabalhamos até você ficar 100% satisfeito com nosso produto e serviço.",
     badge: "Satisfação"
   }, {
     icon: Headphones,
