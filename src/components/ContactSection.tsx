@@ -1,9 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,9 +14,9 @@ const ContactSection = () => {
     vehicle: "",
     message: ""
   });
-  const {
-    toast
-  } = useToast();
+
+  const { toast } = useToast();
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Simular envio do formulário
@@ -30,16 +32,20 @@ const ContactSection = () => {
       message: ""
     });
   };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
+
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5511943453069?text=Olá! Gostaria de saber mais sobre os planos de rastreamento da AETRACKER.", "_blank");
+    window.open("https://wa.me/5511987733033?text=Olá! Gostaria de saber mais sobre os planos de rastreamento da AETRACKER.", "_blank");
   };
-  return <section id="contato" className="py-20 bg-brand-dark">
+
+  return (
+    <section id="contato" className="py-20 bg-brand-dark">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-white mb-6">
@@ -58,19 +64,56 @@ const ContactSection = () => {
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <Input type="text" name="name" placeholder="Seu nome completo" value={formData.name} onChange={handleChange} required className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground" />
+                <Input
+                  type="text"
+                  name="name"
+                  placeholder="Seu nome completo"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground"
+                />
               </div>
               <div>
-                <Input type="tel" name="phone" placeholder="Seu telefone/WhatsApp" value={formData.phone} onChange={handleChange} required className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground" />
+                <Input
+                  type="tel"
+                  name="phone"
+                  placeholder="Seu telefone/WhatsApp"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground"
+                />
               </div>
               <div>
-                <Input type="email" name="email" placeholder="Seu e-mail" value={formData.email} onChange={handleChange} required className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground" />
+                <Input
+                  type="email"
+                  name="email"
+                  placeholder="Seu e-mail"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground"
+                />
               </div>
               <div>
-                <Input type="text" name="vehicle" placeholder="Tipo de veículo (carro, moto, caminhão, etc.)" value={formData.vehicle} onChange={handleChange} className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground" />
+                <Input
+                  type="text"
+                  name="vehicle"
+                  placeholder="Tipo de veículo (carro, moto, caminhão, etc.)"
+                  value={formData.vehicle}
+                  onChange={handleChange}
+                  className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground"
+                />
               </div>
               <div>
-                <Textarea name="message" placeholder="Conte-nos suas necessidades ou dúvidas..." value={formData.message} onChange={handleChange} className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground min-h-[120px]" />
+                <Textarea
+                  name="message"
+                  placeholder="Conte-nos suas necessidades ou dúvidas..."
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="bg-background border-brand-red/20 text-brand-white placeholder:text-muted-foreground min-h-[120px]"
+                />
               </div>
               <Button type="submit" variant="cta" className="w-full">
                 <Mail className="w-4 h-4" />
@@ -92,8 +135,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-brand-white">Telefones</h4>
-                    <p className="text-muted-foreground">(11) 94345-3069</p>
-                    <p className="text-muted-foreground"></p>
+                    <p className="text-muted-foreground">(11) 98773-3033</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -124,7 +166,11 @@ const ContactSection = () => {
               <p className="mb-6">
                 Fale conosco agora mesmo e receba um orçamento personalizado em minutos!
               </p>
-              <Button variant="hero" className="w-full bg-brand-white text-brand-red hover:bg-brand-white/90" onClick={handleWhatsApp}>
+              <Button
+                variant="hero"
+                className="w-full bg-brand-white text-brand-red hover:bg-brand-white/90"
+                onClick={handleWhatsApp}
+              >
                 <MessageCircle className="w-4 h-4" />
                 Chamar no WhatsApp
               </Button>
@@ -150,6 +196,8 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ContactSection;

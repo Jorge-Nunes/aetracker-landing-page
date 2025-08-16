@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Phone, MessageCircle, X } from "lucide-react";
 
@@ -49,7 +50,7 @@ const FloatingCTA = () => {
 
           <div className="space-y-3">
             <a
-              href="https://wa.me/5511999999999?text=Olá! Tenho interesse no rastreamento AETRACKER. Podem me ajudar?"
+              href="https://wa.me/5511987733033?text=Olá! Tenho interesse no rastreamento AETRACKER. Podem me ajudar?"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white p-3 rounded-lg transition-colors"
@@ -57,18 +58,18 @@ const FloatingCTA = () => {
               <MessageCircle className="w-5 h-5" />
               <div>
                 <div className="font-semibold text-sm">WhatsApp</div>
-                <div className="text-xs opacity-90">(11) 99999-9999</div>
+                <div className="text-xs opacity-90">(11) 98773-3033</div>
               </div>
             </a>
 
             <a
-              href="tel:+551140004000"
+              href="tel:+5511987733033"
               className="flex items-center gap-3 bg-brand-red hover:bg-brand-red-hover text-brand-white p-3 rounded-lg transition-colors"
             >
               <Phone className="w-5 h-5" />
               <div>
                 <div className="font-semibold text-sm">Ligue Agora</div>
-                <div className="text-xs opacity-90">(11) 4000-4000</div>
+                <div className="text-xs opacity-90">(11) 98773-3033</div>
               </div>
             </a>
 
